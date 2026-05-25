@@ -9,6 +9,7 @@ import {
   Bookmark,
   Play,
   CircleArrowRight,
+  MapPin
 } from "lucide-react";
 
 const navLinks = {
@@ -379,12 +380,55 @@ export default function CSSPRHomepagePrototype() {
         </aside>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white px-5 py-10 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 text-sm text-slate-600 md:flex-row">
-          <p>© 2026 Center for Security, Strategy & Policy Research</p>
-          <p>SOCA Basement, The University of Lahore · csspr@siss.uol.edu.pk</p>
+      <section className="bg-[#16452a] px-5 py-14 text-white lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="font-serif text-4xl">CSSPR</p>
+
+            <p className="mt-5 max-w-sm text-lg leading-8 text-white/85">
+              CSSPR specializes in issues related to national and international
+              security, strategy, and regional and global geopolitics.
+            </p>
+
+            <a
+              href="mailto:csspr@siss.uol.edu.pk"
+              className="mt-6 inline-flex items-center gap-2 text-white/90 hover:text-white"
+            >
+              <Mail size={18} />
+              csspr@siss.uol.edu.pk
+            </a>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2">
+            <div>
+              <h3 className="font-serif text-3xl">Contact us</h3>
+
+              <div className="mt-5 flex gap-3 text-sm">
+                <a href="#" className="hover:text-emerald-200">
+                  Facebook
+                </a>
+                <a href="#" className="hover:text-emerald-200">
+                  X
+                </a>
+                <a href="#" className="hover:text-emerald-200">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-serif text-3xl">Visit us</h3>
+
+              <p className="mt-5 flex max-w-sm gap-3 leading-7 text-white/85">
+                <MapPin size={20} className="mt-1 shrink-0" />
+                SOCA Basement, The University of Lahore, 1-Km Defence Road,
+                Near Bhuptian Chowk, Lahore, Pakistan
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
+
     </main>
   );
 }
