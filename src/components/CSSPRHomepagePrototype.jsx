@@ -244,15 +244,19 @@ export default function CSSPRHomepagePrototype() {
       <section className="relative overflow-hidden bg-[#f4f2ec]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_8%_16%,rgba(16,185,129,.10),transparent_24%),radial-gradient(circle_at_92%_22%,rgba(34,211,238,.08),transparent_24%)]" />
         <div className="relative mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16">
-          <div className="mb-8 max-w-3xl">
-            <p className="font-mono text-xs font-bold uppercase tracking-[0.28em] text-emerald-800">Security · Strategy · Geopolitics</p>
-            <h2 className="mt-4 font-serif text-5xl leading-[1.02] text-slate-950 md:text-7xl">
-              Clear policy research for a region that moves fast.
-            </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
-              CSSPR brings together security briefings, strategy essays, reports, and expert commentary on Pakistan, South Asia, and global geopolitics.
-            </p>
-          </div>
+        <div className="mx-auto mb-10 max-w-5xl text-center">
+        <p className="font-mono text-xs font-bold uppercase tracking-[0.28em] text-emerald-800">
+            Security · Strategy · Geopolitics
+        </p>
+
+        <h2 className="mt-4 font-serif text-5xl leading-[1.02] text-slate-950 md:text-7xl">
+            Clear policy research for a region that moves fast.
+        </h2>
+
+        <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-700">
+            CSSPR brings together security briefings, strategy essays, reports, and expert commentary on Pakistan, South Asia, and global geopolitics.
+        </p>
+        </div>
 
           <div className="overflow-hidden rounded-[2.5rem] bg-[#052f45] p-4 text-white shadow-2xl shadow-slate-900/20 ring-1 ring-white/60 md:p-6">
             <div className="grid gap-8 lg:grid-cols-[1fr_0.85fr] lg:items-stretch">
