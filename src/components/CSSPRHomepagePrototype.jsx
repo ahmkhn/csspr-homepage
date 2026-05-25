@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Menu,
   Search,
@@ -10,7 +11,15 @@ import {
   CircleArrowRight,
 } from "lucide-react";
 
-const navItems = ["About Us", "Publications", "Books", "Podcasts", "PRISM", "Events", "Pakistan Politico"];
+const navLinks = {
+    "About Us": "/about",
+    Publications: "#",
+    Books: "#",
+    Podcasts: "#",
+    PRISM: "#",
+    Events: "#",
+    "Pakistan Politico": "#",
+  };
 
 const leadStories = [
   {
@@ -232,10 +241,17 @@ export default function CSSPRHomepagePrototype() {
           </div>
 
           <nav className="mt-7 flex flex-wrap justify-center gap-x-7 gap-y-3 text-sm font-semibold text-slate-700">
-            {navItems.map((item) => (
-              <a key={item} href="#" className="inline-flex items-center gap-1 hover:text-emerald-800">
-                {item} {item === "Publications" || item === "Events" ? <ChevronDown size={14} /> : null}
-              </a>
+            {Object.keys(navLinks).map((item) => (
+                <Link
+                key={item}
+                to={navLinks[item]}
+                className="inline-flex items-center gap-1 hover:text-emerald-800"
+                >
+                {item}
+                {item === "Publications" || item === "Events" ? (
+                    <ChevronDown size={14} />
+                ) : null}
+                </Link>
             ))}
           </nav>
         </div>
