@@ -226,7 +226,7 @@ export default function CSSPRHomepagePrototype() {
             <div className="h-px bg-slate-300" />
             <div className="text-center">
               <p className="font-serif text-6xl leading-none text-emerald-800 md:text-8xl">CSSPR</p>
-              <h1 className="mt-1 font-serif text-xl italic md:text-3xl">Center for Security, Strategy & Policy Research</h1>
+              <h1 className="mt-1 font-serif text-xl md:text-3xl">Center for Security, Strategy & Policy Research</h1>
             </div>
             <div className="h-px bg-slate-300" />
           </div>
